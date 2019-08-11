@@ -1,0 +1,61 @@
+%header
+  %p.header グループを作成しました
+
+.wrapper
+
+  .left-box
+    .left-head
+      .user-info
+        %p.user-info__name hogetaro
+        %ul.user-info__menu
+          %li
+            =fa_icon "edit"
+          %li
+            =fa_icon "cog"
+    .left-body
+      .group
+        %p.group__name meeting
+        %p.group__message hogehoge
+
+  .right-box
+    .right-head
+      .group-info
+        %p.group-info__title hogetaro
+        %ul.group-info__menbers
+          %li hogetaro
+      .group-edit
+        .group-edit__btn Edit
+
+    .right-body
+      .messages
+        .message-info
+          .message-info__name hogetaro
+          .message-info__date 2019/01/01
+        %p.message hogehogehoge
+
+      .messages
+        .message-info
+          .message-info__name hogetaro
+          .message-info__date 2019/01/01
+        %p.message hogehogehoge
+
+      .messages
+        .message-info
+          .message-info__name hogetaro
+          .message-info__date 2019/01/01
+        %p.message hogehogehoge
+
+      .messages
+        .message-info
+          .message-info__name hogetaro
+          .message-info__date 2019/01/01
+        %p.message hogehogehoge
+
+    .form
+      %form{class: "input"}
+        .input-box
+          %input{placeholder: "type a message", type: "text", class: "input-box__text"}
+          %label.input-box__image
+            =fa_icon "image"
+            %input{class: "input-box__image__file", type: "file"}
+        %input{type: "submit", class: "submit-btn", value: "SEND"}
