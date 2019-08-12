@@ -1,22 +1,7 @@
 
 .wrapper
 
-  .left-box
-    .left-head
-      .user-info
-        %p.user-info__name
-          = current_user.name
-        %ul.user-info__menu
-          %li
-            = link_to new_group_path do
-              =fa_icon "edit"
-          %li
-            = link_to edit_user_path(current_user) do
-              =fa_icon "cog"
-    .left-body
-      .group
-        %p.group__name meeting
-        %p.group__message hogehoge
+  =render partial: "layouts/leftbox"
 
   .right-box
     .right-head
