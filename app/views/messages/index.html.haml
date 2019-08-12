@@ -14,28 +14,7 @@
 
     .right-body
       .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
+        = render partial: 'message', collection: @messages
 
     .form
       = form_for [@group, @message], html: { class: 'input' } do |f|
