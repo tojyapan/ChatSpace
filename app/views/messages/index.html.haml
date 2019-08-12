@@ -38,10 +38,10 @@
         %p.message hogehogehoge
 
     .form
-      %form{class: "input"}
+      = form_for [@group, @message], html: { class: 'input' } do |f|
         .input-box
-          %input{placeholder: "type a message", type: "text", class: "input-box__text"}
-          %label.input-box__image
+          = f.text_field :body, class: 'input-box__text', placeholder: 'type a message'
+          = f.label :image, class: 'input-box__image' do
             =fa_icon "image"
-            %input{class: "input-box__image__file", type: "file"}
-        %input{type: "submit", class: "submit-btn", value: "SEND"}
+            = f.file_field :image, class: 'input-box__image__file'
+        = f.submit 'Send', class: 'submit-btn'
