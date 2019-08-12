@@ -1,61 +1,30 @@
-%header
-  %p.header グループを作成しました
 
 .wrapper
 
-  .left-box
-    .left-head
-      .user-info
-        %p.user-info__name hogetaro
-        %ul.user-info__menu
-          %li
-            =fa_icon "edit"
-          %li
-            =fa_icon "cog"
-    .left-body
-      .group
-        %p.group__name meeting
-        %p.group__message hogehoge
+  =render partial: "layouts/leftbox"
 
   .right-box
     .right-head
       .group-info
-        %p.group-info__title hogetaro
-        %ul.group-info__menbers
-          %li hogetaro
+        .group-info__title
+          = @group.name
+        .group-info__menbers
+          Member :
+          - @group.users.each do |user|
+            = user.name
       .group-edit
-        .group-edit__btn Edit
+        .group-edit__btn
+          =link_to 'Edit', edit_group_path(@group)
 
     .right-body
       .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
-
-      .messages
-        .message-info
-          .message-info__name hogetaro
-          .message-info__date 2019/01/01
-        %p.message hogehogehoge
+        = render partial: 'message', collection: @messages
 
     .form
-      %form{class: "input"}
+      = form_for [@group, @message], html: { class: 'input' } do |f|
         .input-box
-          %input{placeholder: "type a message", type: "text", class: "input-box__text"}
-          %label.input-box__image
+          = f.text_field :body, class: 'input-box__text', placeholder: 'type a message'
+          = f.label :image, class: 'input-box__image' do
             =fa_icon "image"
-            %input{class: "input-box__image__file", type: "file"}
-        %input{type: "submit", class: "submit-btn", value: "SEND"}
+            = f.file_field :image, class: 'input-box__image__file'
+        = f.submit 'Send', class: 'submit-btn'
