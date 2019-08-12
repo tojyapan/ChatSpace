@@ -6,12 +6,14 @@
   .left-box
     .left-head
       .user-info
-        %p.user-info__name hogetaro
+        %p.user-info__name
+          = current_user.name
         %ul.user-info__menu
           %li
             =fa_icon "edit"
           %li
-            =fa_icon "cog"
+            = link_to edit_user_path(current_user) do
+              =fa_icon "cog"
     .left-body
       .group
         %p.group__name meeting
