@@ -6,11 +6,15 @@
   .right-box
     .right-head
       .group-info
-        %p.group-info__title hogetaro
-        %ul.group-info__menbers
-          %li hogetaro
+        .group-info__title
+          = @group.name
+        .group-info__menbers
+          Member :
+          - @group.users.each do |user|
+            = user.name
       .group-edit
-        .group-edit__btn Edit
+        .group-edit__btn
+          =link_to 'Edit', edit_group_path(@group)
 
     .right-body
       .messages
