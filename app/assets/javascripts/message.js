@@ -1,11 +1,9 @@
 $(function() {
 
   function buildHTML(message) {
-
-    if (message.image == null) {
-      var imageHTML = "";
-    } else {
-      var imageHTML = "<img src'${message.image}'"
+    var addImage = "";
+    if (message.image.url) {
+      addImage = `<img src="${message.image.url}">`;
     }
 
     let html =  `<div class="message-content">
@@ -20,8 +18,8 @@ $(function() {
                   <p class="message">
                     ${message.body}
                   </p>
-                    ${imageHTML}
-                  </div>`
+                    ${addImage}
+                </div>`;
 
     return html;
   }
