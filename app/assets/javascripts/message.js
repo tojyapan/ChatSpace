@@ -40,7 +40,6 @@ $(function() {
       $('.messages').append(html);
       $('.js-form')[0].reset();
       $('.submit-btn').prop('disabled', false);
-      console.log($('.message-content').slice(-1)[0]);
       $('.right-body').animate({scrollTop: $($('.message-content').slice(-1)[0]).offset().top}, 'fast');
     })
     .fail(function() {
