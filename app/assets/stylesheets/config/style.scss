@@ -117,7 +117,7 @@ html, body {
       height: calc(100vh - 190px - 46px);
       padding: 46px 40px 0 40px;
       background-color: $b-white;
-      overflow: scroll;
+      overflow: auto;
       .messages {
         padding-bottom: 40px;
         .message-info {
