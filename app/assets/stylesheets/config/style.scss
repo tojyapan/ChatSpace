@@ -2,12 +2,35 @@ html, body {
   height: 100vh;
 }
 
+
 .wrapper {
   height: 100vh;
   width: 100vw;
   display: flex;
   .left-box {
-    flex-basis: 300px;
+
+    a {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:link {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $f-gray;
+    }
+    a:active {
+      text-decoration: none;
+      color: $f-white;
+    }
+
+    width: 300px;
     height: 100vh;
     color: $f-white;
     .user-info {
@@ -75,6 +98,7 @@ html, body {
       }
       .group-edit {
         color: $all-blue;
+        text-decoration: none;
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
@@ -82,6 +106,11 @@ html, body {
         border: solid 1px $all-blue;
         position: absolute;
         right: 40px;
+
+        a:visited {
+          text-decoration: none;
+          color: $all-blue;
+        }
       }
     }
     .right-body {
