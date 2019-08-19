@@ -17,7 +17,7 @@
           =link_to 'Edit', edit_group_path(@group)
 
     .right-body
-      .messages
+      %div{class: "messages", data: {group: {id: "#{@group.id}"}}}
         = render partial: 'message', collection: @messages
 
     .form
