@@ -6,7 +6,7 @@ $(function() {
       addImage = `<img src="${message.image.url}">`;
     }
 
-    let html =  `<div class="message-content">
+    let html =  `<div class="message-content" data-id="${message.id}">
                   <div class="message-info">
                     <div class="message-info__name">
                       ${message.user_name}
