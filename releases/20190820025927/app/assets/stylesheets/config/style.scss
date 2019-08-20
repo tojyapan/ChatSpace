@@ -1,0 +1,183 @@
+html, body {
+  height: 100vh;
+}
+
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .left-box {
+
+    a {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:link {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $f-white;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $f-gray;
+    }
+    a:active {
+      text-decoration: none;
+      color: $f-white;
+    }
+
+    width: 300px;
+    height: 100vh;
+    color: $f-white;
+    .user-info {
+      background-color: $b-darkblue;
+      height: 100px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__menu {
+        display: flex;
+        li {
+          margin-left: 0.3rem;
+        }
+      }
+    }
+
+    .left-body {
+      height: calc(100vh - 120px);
+      background-color: $b-blue;
+      padding: 20px 20px 0 20px;
+      overflow: scroll;
+      .group {
+        margin-bottom: 40px;
+        &__name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__message {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .right-box {
+    height: 100vh;
+    flex-basis: calc(100vw - 300px);
+    .right-head {
+      height: 100px;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px #EEEEEE;
+      overflow: scroll;
+      .group-info {
+        margin-top: 35px;
+        &__title {
+          font-size: 20px;
+          color: $f-solidblack;
+          margin-bottom: 15px;
+        }
+        &__members {
+          display: flex;
+          font-size: 12px;
+          color: $f-gray;
+          li {
+            margin-left: 0.3rem;
+          }
+        }
+      }
+      .group-edit {
+        color: $all-blue;
+        text-decoration: none;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+        border: solid 1px $all-blue;
+        position: absolute;
+        right: 40px;
+
+        a:visited {
+          text-decoration: none;
+          color: $all-blue;
+        }
+      }
+    }
+    .right-body {
+      height: calc(100vh - 190px - 46px);
+      padding: 46px 40px 0 40px;
+      background-color: $b-white;
+      overflow: auto;
+      .messages {
+        padding-bottom: 40px;
+        .message-info {
+          display: flex;
+          margin-bottom: 10px;
+          &__name {
+            color: $f-black;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          &__date {
+            color: $f-gray;
+            font-size: 12px;
+            margin-left: 10px;
+          }
+        }
+        .message {
+          color: $f-gray;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .form {
+      height: 90px;
+      padding: 0px 40px;
+      background-color: $b-gray;
+      .input {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .input-box {
+          position: relative;
+          flex-basis: 100%;
+          &__text {
+            height: 50px;
+            width: calc(100% - 40px);
+            padding: 0 40px 0 10px;
+            color: $f-gray;
+            border-style: none;
+            }
+          &__image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+              &__file{
+                display: none;
+              }
+          }
+        }
+        .submit-btn {
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: $all-blue;
+          color: white;
+        }
+      }
+    }
+  }
+}

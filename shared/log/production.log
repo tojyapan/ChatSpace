@@ -1,0 +1,77 @@
+D, [2019-08-20T02:59:41.760344 #4543] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T02:59:41.760696 #4543] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T02:59:41.784169 #4543] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (12.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T02:59:41.797447 #4543] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T02:59:41.800316 #4543] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T02:59:41.801298 #4543] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T02:59:41.801573 #4543] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T04:36:42.066524 #23745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T04:36:42.066846 #23745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T04:36:42.074806 #23745] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T04:36:42.081037 #23745] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T04:36:42.083909 #23745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T04:36:42.084819 #23745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T04:36:42.085082 #23745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T04:54:34.572928 #25116] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T04:54:34.573267 #25116] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T04:54:34.581303 #25116] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T04:54:34.587893 #25116] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T04:54:34.590730 #25116] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T04:54:34.591617 #25116] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T04:54:34.591882 #25116] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T05:12:06.113245 #26125] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T05:12:06.113588 #26125] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T05:12:06.121116 #26125] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T05:12:06.127339 #26125] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T05:12:06.129988 #26125] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T05:12:06.130950 #26125] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T05:12:06.131251 #26125] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T05:23:26.104142 #27335] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T05:23:26.105248 #27335] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T05:23:26.112956 #27335] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T05:23:26.119207 #27335] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T05:23:26.121950 #27335] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T05:23:26.122847 #27335] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T05:23:26.123088 #27335] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T05:35:15.574861 #28322] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T05:35:15.575187 #28322] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T05:35:15.582844 #28322] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T05:35:15.589135 #28322] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T05:35:15.591961 #28322] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T05:35:15.592864 #28322] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T05:35:15.593131 #28322] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T05:44:13.862045 #3863] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T05:44:13.862750 #3863] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T05:44:13.877165 #3863] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T05:44:13.886270 #3863] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T05:44:13.888899 #3863] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T05:44:13.889711 #3863] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T05:44:13.889934 #3863] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T06:00:11.019171 #4903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T06:00:11.019429 #4903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T06:00:11.026721 #4903] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T06:00:11.032590 #4903] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T06:00:11.035175 #4903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T06:00:11.035969 #4903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T06:00:11.036183 #4903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T06:27:50.146578 #3870] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T06:27:50.147378 #3870] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T06:27:50.163547 #3870] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T06:27:50.172666 #3870] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T06:27:50.175443 #3870] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T06:27:50.176280 #3870] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T06:27:50.176519 #3870] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T06:49:19.244589 #4804] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T06:49:19.244982 #4804] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T06:49:19.253734 #4804] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T06:49:19.259793 #4804] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T06:49:19.262389 #4804] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T06:49:19.263247 #4804] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T06:49:19.263452 #4804] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
+D, [2019-08-20T06:52:51.445312 #5785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+D, [2019-08-20T06:52:51.445622 #5785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4981211595698698920', 0);[0m
+D, [2019-08-20T06:52:51.452703 #5785] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2019-08-20T06:52:51.458512 #5785] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2019-08-20T06:52:51.461077 #5785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2019-08-20T06:52:51.461862 #5785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2019-08-20T06:52:51.462100 #5785] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4981211595698698920')[0m
