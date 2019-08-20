@@ -17,11 +17,11 @@
           =link_to 'Edit', edit_group_path(@group)
 
     .right-body
-      .messages
+      %div{class: "messages", data: {group: {id: "#{@group.id}"}}}
         = render partial: 'message', collection: @messages
 
     .form
-      = form_for [@group, @message], html: { class: 'input' } do |f|
+      = form_for [@group, @message], html: { class: 'input js-form' } do |f|
         .input-box
           = f.text_field :body, class: 'input-box__text', placeholder: 'type a message'
           = f.label :image, class: 'input-box__image' do
