@@ -9,7 +9,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/cache', 'tmp/sockets'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
-set :ssh_options, auto_methods: ['publickey'],
+set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/key_pair.pem']
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
