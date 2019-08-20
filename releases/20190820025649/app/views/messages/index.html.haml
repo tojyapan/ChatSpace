@@ -1,0 +1,30 @@
+
+.wrapper
+
+  =render partial: "layouts/leftbox"
+
+  .right-box
+    .right-head
+      .group-info
+        .group-info__title
+          = @group.name
+        .group-info__menbers
+          Member :
+          - @group.users.each do |user|
+            = user.name
+      .group-edit
+        .group-edit__btn
+          =link_to 'Edit', edit_group_path(@group)
+
+    .right-body
+      %div{class: "messages", data: {group: {id: "#{@group.id}"}}}
+        = render partial: 'message', collection: @messages
+
+    .form
+      = form_for [@group, @message], html: { class: 'input js-form' } do |f|
+        .input-box
+          = f.text_field :body, class: 'input-box__text', placeholder: 'type a message'
+          = f.label :image, class: 'input-box__image' do
+            =fa_icon "image"
+            = f.file_field :image, class: 'input-box__image__file'
+        = f.submit 'Send', class: 'submit-btn'
