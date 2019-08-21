@@ -1,7 +1,7 @@
 $(function() {
 
   let search_list = $('#user-search-result');
-  var actionUesrs = []
+  var actionUesrs = [];
 
   function appendUser(user) {
     let html = `<div class="chat-group-user clearfix" id="user-${user.id}">
@@ -52,9 +52,9 @@ $(function() {
       $('#user-search-result').empty();
       if (users.length !== 0 ) {
         users.forEach(function(user) {
-          if (isActionedUser(actionUsers, user) {
+          if (isActionedUser(actionUsers, user)) {
             appendUser(user);
-          })
+          }
           // appendUser(user);
         });
       } else {
