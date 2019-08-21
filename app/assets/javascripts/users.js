@@ -1,7 +1,7 @@
 $(function() {
 
   let search_list = $('#user-search-result');
-  var actionUesrs = []
+  var actionUsers = []
 
   function appendUser(user) {
     let html = `<div class="chat-group-user clearfix" id="user-${user.id}">
@@ -60,14 +60,14 @@ $(function() {
   $(document).on('click',　'.user-search-add', function() {
     let id = $(this).data('user-id');
     let name = $(this).data('user-name');
-    actionUesrs.push(id);
+    actionUsers.push(id);
     appendChatMember(name, id);
     $('#user-' + id).remove();
   });
 
   $(document).on('click', '.user-search-remove', function() {
     let id = $(this).data('user_id');
-    actionUesrs.push(id);
+    actionUsers.push(id);
     $(this).parent().remove();
   })
 });
