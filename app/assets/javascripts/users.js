@@ -1,6 +1,7 @@
 $(function() {
 
   let search_list = $('#user-search-result');
+  var actionUesrs = []
 
   function appendUser(user) {
     let html = `<div class="chat-group-user clearfix" id="user-${user.id}">
@@ -41,7 +42,11 @@ $(function() {
       $('#user-search-result').empty();
       if (users.length !== 0) {
         users.forEach(function(user) {
-          appendUser(user);
+          actionUsers.forEach(function(actionUser) {
+            if (actionUser !== user.id) {
+              appendUser(user);
+            }
+          });
         });
       } else {
         appendErrMsgToHtml('一致するユーザーはいません');
@@ -55,11 +60,14 @@ $(function() {
   $(document).on('click',　'.user-search-add', function() {
     let id = $(this).data('user-id');
     let name = $(this).data('user-name');
+    actionUesrs.push(id);
     appendChatMember(name, id);
     $('#user-' + id).remove();
   });
 
   $(document).on('click', '.user-search-remove', function() {
+    let id = $(this).data('user_id');
+    actionUesrs.push(id);
     $(this).parent().remove();
   })
 });
