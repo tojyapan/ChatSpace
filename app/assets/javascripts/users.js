@@ -28,7 +28,7 @@ $(function() {
   }
 
   function isActionedUser(actionUsers, user) {
-    actionUsers.forEach(function(acutionUser) {
+    actionUsers.forEach(function(actionUser) {
       if (actionUser === user.id) {
         return false;
       } else {
