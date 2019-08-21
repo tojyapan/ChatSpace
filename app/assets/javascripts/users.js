@@ -1,7 +1,7 @@
 $(function() {
 
   let search_list = $('#user-search-result');
-  var actionUsers = []
+  var actionUesrs = []
 
   function appendUser(user) {
     let html = `<div class="chat-group-user clearfix" id="user-${user.id}">
@@ -27,6 +27,16 @@ $(function() {
     $('.chat-group-users').append(html);
   }
 
+  function isActionedUser(actionUsers, user) {
+    actionUsers.forEach(function(acutionUser) {
+      if (actionUser === user.id) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+  }
+
   $('#user-search-field').on('keyup', function(e) {
     e.preventDefault();
     let input = $('#user-search-field').val();
@@ -40,13 +50,12 @@ $(function() {
 
     .done(function(users) {
       $('#user-search-result').empty();
-      if (users.length !== 0) {
+      if (users.length !== 0 ) {
         users.forEach(function(user) {
-          actionUsers.forEach(function(actionUser) {
-            if (actionUser !== user.id) {
-              appendUser(user);
-            }
-          });
+          if (isActionedUser(actionUsers, user) {
+            appendUser(user);
+          })
+          // appendUser(user);
         });
       } else {
         appendErrMsgToHtml('一致するユーザーはいません');
