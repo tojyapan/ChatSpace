@@ -27,9 +27,9 @@ $(function() {
     $('.chat-group-users').append(html);
   }
 
-  function isActionedUser(actionUsers, user) {
-    actionUsers.forEach(function(actionUser) {
-      if (actionUser === user.id) {
+  function isActionedUser(actionedUsers, user) {
+    actionedUsers.forEach(function(actionedUser) {
+      if (actionedUser === user.id) {
         return false;
       } else {
         return true;
