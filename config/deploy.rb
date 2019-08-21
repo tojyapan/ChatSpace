@@ -35,7 +35,8 @@ set :default_env, {
 # secrets.yml用のシンボリックリンクを追加
 set :linked_files, %w{ config/secrets.yml }
 
-# デプロイ処理が終わった後、Unicornを再起動するための記述
+# 元々記述されていた after 「'deploy:publishing', 'deploy:restart'」以下を削除して、次のように書き換え
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
@@ -44,9 +45,9 @@ namespace :deploy do
 
   desc 'upload secrets.yml'
   task :upload do
-    on role(:app) do |host|
+    on roles(:app) do |host|
       if test "[ ! -d #{shared_path}/config ]"
-        execute "mkidr -p #{shared_path}/config"
+        execute "mkdir -p #{shared_path}/config"
       end
       upload!('config/secrets.yml', "#{shared_path}/config/secrets.yml")
     end
