@@ -1,7 +1,7 @@
 $(function() {
 
   let search_list = $('#user-search-result');
-  var actionUesrs = [];
+  var actionUsers = [];
 
   function appendUser(user) {
     let html = `<div class="chat-group-user clearfix" id="user-${user.id}">
